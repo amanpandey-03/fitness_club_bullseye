@@ -2,6 +2,7 @@ import { FormControl, FormGroup, Input, InputLabel,Button, Typography,styled} fr
 import { useState } from "react";
 import {addUser} from '../service/api' 
 import "./AddUser.css"
+import { useHistory } from 'react-router-dom';
 
 
 
@@ -62,11 +63,13 @@ const AddUser =  () =>{
             </FormControl>
 
             <FormControl>
-                <Button onClick= {() => addUserDetails()}  variant="contained"> Add User</Button>
+                <Button style={{ marginTop: 25 }} onClick= {() => addUserDetails()}  variant="contained"> Add User</Button>
             </FormControl>
-
+           
             
-            <a href="/UserList"><Button   onClick= {() => addUserDetails() }   variant="contained">Show Users</Button></a>
+  
+            
+            <a href="/UserList"><Button  onClick= {() => addUserDetails() }   variant="contained">Show Users</Button></a>
             
 
         </InputField>

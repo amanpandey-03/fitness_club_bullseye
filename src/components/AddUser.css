@@ -1,12 +1,11 @@
 .MuiFormGroup-root {
     /* border:1px solid black; */
-    padding: 20px;
-    border-radius: 50px;
+    padding: 20px 20px 50px 20px;
+    border-radius: 20px;
     background: #e0e0e0;
     box-shadow:  -19px -19px 38px #b5b5b5,
                  19px 19px 38px #ffffff;
     
-
 }
 
 a{
@@ -17,4 +16,6 @@ margin: 0px 8px 0 8px;
 button{
     width: 100%;
 }
+
+
 
