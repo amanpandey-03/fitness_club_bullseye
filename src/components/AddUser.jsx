@@ -48,11 +48,6 @@ const AddUser =  () =>{
             </FormControl>
 
             <FormControl>
-                <InputLabel>Username</InputLabel>
-                <Input onChange={(e) => onValueChange(e)} name="username"/>
-            </FormControl>
-
-            <FormControl>
                 <InputLabel variant="Outlined">Email</InputLabel>
                 <Input onChange={(e) => onValueChange(e)} name="email"/>
             </FormControl>
@@ -63,12 +58,16 @@ const AddUser =  () =>{
             </FormControl>
 
             <FormControl>
+                <InputLabel>Address</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name="address"/>
+            </FormControl>
+
+
+
+            <FormControl>
                 <Button style={{ marginTop: 25 }} onClick= {() => addUserDetails()}  variant="contained"> Add User</Button>
             </FormControl>
-           
-            
-  
-            
+
             <a href="/UserList"><Button  onClick= {() => addUserDetails() }   variant="contained">Show Users</Button></a>
             
 
