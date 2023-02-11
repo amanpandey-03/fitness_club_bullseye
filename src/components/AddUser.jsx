@@ -43,7 +43,7 @@ const AddUser =  () =>{
         <InputField>
         <Typography variant="h5">Fitness Club Registration</Typography>     
             <FormControl>
-            <InputLabel>Name</InputLabel>
+            <InputLabel variant="Outlined">Name</InputLabel>
                 <Input onChange={(e) => onValueChange(e)} name="name"/>
             </FormControl>
 
@@ -58,7 +58,7 @@ const AddUser =  () =>{
             </FormControl>
 
             <FormControl>
-                <InputLabel>Address</InputLabel>
+                <InputLabel variant="Outlined">Address</InputLabel>
                 <Input onChange={(e) => onValueChange(e)} name="address"/>
             </FormControl>
 
